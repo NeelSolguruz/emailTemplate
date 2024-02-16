@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Template</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Georgia', serif, sans-serif;
+        }
+
+        #mainContainer {
+            width: 30%;
+            /* height: 30%; */
+            /* background-color: #abc4ff; */
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            border-top: 1px solid black;
+            border-collapse: collapse;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        .highlight {
+            margin-left: 3px;
+
+        }
+
+        .tagLine {
+            height: 20px;
+            /* width: 10px; */
+            text-align: center;
+            font-size: 12px;
+            /* background-color: #edf2fb; */
+            font-weight: bold;
+        }
+
+        .mainHeader {
+            width: 100%;
+            height: 100px;
+            background-color: #edf2fb;
+        }
+
+        .logo {
+            text-align: right;
+            /* padding-right: 10px; */
+            width: 50%;
+            transform: translateX(-10%);
+            mix-blend-mode: multiply;
+
+
+        }
+
+        .logoSvg {
+            width: 100%;
+            /* height: 60%; */
+            transform: scale(2);
+            object-fit: cover;
+            /* backdrop-filter: blur(10px); */
+
+        }
+
+        .brandName {
+            font-size: 15px;
+            width: 70%;
+            font-weight: bold;
+            color: #00163d;
+            padding-left: 10px;
+            transform: translateX(10%);
+        }
+
+        .line1,
+        .line4 {
+            width: 100%;
+            height: 1px;
+            background-color: #b6ccfe;
+            text-align: center;
+        }
+
+        .remainingDay {
+            font-size: 18px;
+            font-weight: 400;
+            padding: 15px;
+            color: whitesmoke;
+        }
+
+        .line2 {
+            width: 100%;
+            height: 1px;
+            background-color: #b6ccfe;
+            text-align: center;
+        }
+
+        .line3 {
+            width: 100%;
+            height: 1px;
+            background-color: #b6ccfe;
+            text-align: center;
+        }
+
+        .sellingLine {
+            font-size: 20px;
+            word-spacing: 5px;
+            font-weight: 600;
+            padding: 15px;
+            color: whitesmoke;
+        }
+
+        .offerButton {
+            background-color: #edf2fb;
+            width: 20%;
+            height: 25%;
+            margin-top: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            border-radius: 35px;
+        }
+
+        .buttonTr {
+            text-align: center;
+
+        }
+
+        .companySvg {
+            width: 100%;
+            height: 80%;
+
+        }
+
+        .svg {
+            width: 80%;
+            background-color: #b6ccfe;
+        }
+
+        .companySvg .svg img {
+            width: 70%;
+            mix-blend-mode: multiply;
+            height: 70%;
+            transform: translateX(55px);
+            /* align-content: center; */
+            object-fit: contain;
+            margin: 20px;
+        }
+
+        .bottomBody {
+            /* width: 50%; */
+            text-align: center;
+
+            background-color: #edf2fb;
+        }
+
+        .bottomLine1 {
+            text-align: center;
+            font-size: 12px;
+            margin: 15px;
+
+        }
+
+        .bLine1 {
+            margin: 15px;
+            padding: 15px;
+            height: 10px;
+            text-align: center;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+
+        }
+
+        .box1 {
+            width: 60%;
+            height: 50%;
+            background-color: #edf2fb;
+            float: left;
+
+        }
+
+        .boxSvg1 {
+            width: 50%;
+            height: 200px;
+        }
+
+        .svg1 {
+            width: 50%;
+            height: 40%;
+            transform: translate(-15%);
+            object-fit: contain;
+            /* mix-blend-mode: multiply; */
+        }
+
+        .boxText1 {
+            font-size: 15px;
+            /* font-weight: 600; */
+            float: right;
+            width: 50%;
+            transform: translate(-10%, 15%);
+        }
+
+        .box2 {
+            width: 60%;
+            height: 50%;
+            background-color: #edf2fb;
+            float: right;
+
+        }
+
+        .boxSvg2 {
+            width: 50%;
+            height: 200px;
+        }
+
+        .svg2 {
+            width: 50%;
+            height: 40%;
+            transform: translate(-15%);
+            object-fit: contain;
+            /* mix-blend-mode: multiply; */
+        }
+
+        .boxText2 {
+            font-size: 15px;
+            /* font-weight: 600; */
+            float: right;
+            /* padding: 15px; */
+            width: 30%;
+            transform: translate(-80%, 15%);
+        }
+
+        .boxContainer {
+            width: 30%;
+            height: 30%;
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+            border-collapse: separate;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .footer {
+            border-top: 1px solid black;
+        }
+
+        .socialMedia {
+            margin-top: 10px;
+            width: 100%;
+        }
+        
+        .socialMedia i {
+            font-size: 20px;
+            margin-right: 10px;
+            position: relative;
+            left: 35%;
+            color: #00163d;
+            transition: color 0.3s ease;
+        }
+
+        .socialMedia i:hover {
+            color: #edf2fb;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <table id="mainContainer">
+        <!-- Heading Line -->
+        <tr class="tagLine">
+            <th colspan="3">can't see email? <span class="highlight"><a href="#"
+                        style=" color: #abc4ff; text-decoration: none;">click here</a></span></th>
+        </tr>
+        <!-- header section(logo) -->
+        <tr class="mainHeader">
+            <td class=" brandName" id="brandName">SolGuruz.com<sup class="brandNameSup"
+                style="font-size:12px; ">&#174;</sup>
+            </td>
+            <td class="logo">
+                <!-- <a href="https://imgbb.com/"><img  src="https://i.ibb.co/g4LfGyS/Web-designer-with-idea.gif" alt="Web-designer-with-idea" border="0"></a> -->
+                <img class="logoSvg" src="https://i.ibb.co/8M0z7yb/Untitled.png" alt="Untitled" border="0">
+            </td>
+        </tr>
+
+        <!-- main Body section -->
+        <tr class="mainBody">
+        <tr class="line1">
+            <td class="remainingDay" colspan="2">- 1 Day Left -</td>
+        </tr>
+        <tr class="line2">
+            <td class="sellingLine" colspan="2"> <span style="word-spacing: normal; color: black;">SolGuruz<sup
+                        class="brandNameSup" style="font-size:12px; ">&#174;</sup></span> happy houre </td>
+        <tr class="line3">
+            <td class="sellingLine" colspan="2">- 50% off -</td>
+        </tr>
+        </tr>
+        <tr class="line4">
+            <td class="buttonTr" colspan="2">
+                <button class="offerButton">Snag deal</button>
+            </td>
+        </tr>
+        <tr class="companySvg">
+            <td class="svg" colspan="2">
+                <img src="https://i.ibb.co/Wkn8NCG/Sol-Guruz-logo.png" alt="Sol-Guruz-logo" border="0">
+            </td>
+        </tr>
+        </tr>
+        <!-- bottom -->
+        <tr class="bottomBody">
+        <tr class="bottomLine1">
+            <td class="bLine1" colspan="2">For only 24 hours, get your Free application advice from over expert software
+                engineer and free one prototype -> <span class="clickHere"> <a href="#"
+                        style=" color: black; text-decoration: none;"> Click Here </a></span>
+            </td>
+        </tr>
+        <tr>
+            <table style="border-collapse: separate;" class="boxContainer">
+                <tr class="box1">
+                    <td class="boxSvg1">
+                        <img class="svg1" src="https://i.ibb.co/9cKNSRV/Group.png" alt="coding" border="0">
+                        <span class="boxText1">
+                            Giving Bespoke Development Solutions
+                        </span>
+                    </td>
+                </tr>
+                <tr></tr>
+                <tr class="box2">
+                    <td class="boxSvg2">
+                        <img class="svg2" src="https://i.ibb.co/9cKNSRV/Group.png" alt="coding" border="0">
+                        <span class="boxText2">
+                            Giving Custom Ui/Ux Solutions
+                        </span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <p class="footer">© 2021 <a href="https://solguruz.com/">SolGuruz.com</a><sup
+                                class="brandNameSup" style="font-size:12px; ">&#174;</sup> All rights reserved.<span><a
+                                    href="#">Unsubscrib</a></span>
+                        </p>
+                        <span class="socialMedia">
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-square-facebook"></i>
+                            <i class="fa-brands fa-x-twitter"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </span>
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </td>
+                </tr>
+            </table>
+        </tr>
+        </tr>
+        <!-- footer -->
+
+    </table>
+
+
+</body>
+
+</html>
